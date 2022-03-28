@@ -24,5 +24,5 @@ public class Article {
 
     @Column
     private String content;
-    
+
 }
