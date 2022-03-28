@@ -10,7 +10,14 @@ public class FirstController {
 
     @GetMapping("/hi")
     public String niceToMeetYou(Model model) {
-        model.addAttribute("username", "Minsu");
+        model.addAttribute("username", "민수");
         return "greetings"; // templates/greetings.mustache를 찾아서 브라우저로 전송
     }
+
+    @GetMapping("/bye")
+    public String seeYouNext(Model model) {
+        model.addAttribute("nickname", "민수");
+        return "goodbye";
+    }
+
 }
