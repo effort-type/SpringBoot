@@ -75,7 +75,7 @@ public class ArticleController {
     }
 
 
-    @GetMapping("/articles/{article.id}/edit")
+    @GetMapping("/articles/{id}/edit")
     public String edit(@PathVariable Long id, Model model) {
         // 수정할 데이터를 가져오기
         Article articleEntity = articleRepository.findById(id).orElse(null);
